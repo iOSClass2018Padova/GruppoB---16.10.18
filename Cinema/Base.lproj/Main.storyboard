@@ -324,7 +324,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filmCell" rowHeight="137" id="OUU-MR-LMq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filmCell" rowHeight="137" id="OUU-MR-LMq" customClass="DetailFilmCell" customModule="Cinema" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="137"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OUU-MR-LMq" id="AC7-dQ-tzn">
@@ -363,6 +363,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="detailFilmDescription" destination="VB7-57-eaD" id="HsX-CL-YhI"/>
+                                            <outlet property="detailFilmImage" destination="yXc-DR-Kxm" id="cYF-kF-Rw5"/>
+                                            <outlet property="detailFilmName" destination="uRI-bg-3Gm" id="ONU-sD-R3e"/>
                                             <segue destination="Arc-QF-NmW" kind="show" id="QNB-VJ-flz"/>
                                         </connections>
                                     </tableViewCell>
@@ -383,10 +386,10 @@
             </objects>
             <point key="canvasLocation" x="300" y="82.3088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--Seats Collection View Controller-->
         <scene sceneID="AUE-ZY-fHt">
             <objects>
-                <viewController id="Arc-QF-NmW" sceneMemberID="viewController">
+                <viewController id="Arc-QF-NmW" customClass="SeatsCollectionViewController" customModule="Cinema" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k8A-tE-Yvk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -401,7 +404,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="seatCelll" id="KTR-en-Rwy">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="seatCelll" id="KTR-en-Rwy" customClass="SeatsCollectionViewCell" customModule="Cinema" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">

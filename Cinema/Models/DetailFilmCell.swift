@@ -10,6 +10,11 @@ import UIKit
 
 class DetailFilmCell: UITableViewCell {
 
+    @IBOutlet weak var detailFilmImage: UIImageView!
+    @IBOutlet weak var detailFilmName: UILabel!
+    @IBOutlet weak var detailFilmDescription: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
