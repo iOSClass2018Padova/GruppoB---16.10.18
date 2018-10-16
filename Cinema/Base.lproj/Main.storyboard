@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="-446" y="84"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="HGg-d9-2e5">
             <objects>
-                <viewController id="xSS-wo-jhB" sceneMemberID="viewController">
+                <viewController id="xSS-wo-jhB" customClass="RegisterViewController" customModule="Cinema" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sxh-v9-kfW" userLabel="Register">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
