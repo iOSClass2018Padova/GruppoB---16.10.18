@@ -6,4 +6,9 @@
 //  Copyright © 2018 Michele Pertile. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class FilmListController: UIViewController {
+    
+    //private var listOfFilms : [Film] = []
+}
