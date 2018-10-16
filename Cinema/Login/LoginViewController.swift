@@ -46,7 +46,7 @@ class LoginViewController: UIViewController {
         listOfPerson = Person.all()
         if listOfPerson.count == 0 {
             NSLog("ListOfPerson vuota" )
-            var p : Person = Person(email: "a@a.com", name: "Gian", surname: "Canova", password: "123456")
+            let p : Person = Person(email: "a@a.com", name: "Gian", surname: "Canova", password: "123456")
             p.add()
         // Do any additional setup after loading the view.
         }
