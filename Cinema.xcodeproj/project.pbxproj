@@ -15,6 +15,8 @@
 		7F3838652175CCFB00FE9D1B /* CinemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3838642175CCFB00FE9D1B /* CinemaTests.swift */; };
 		7F3838702175CCFB00FE9D1B /* CinemaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38386F2175CCFB00FE9D1B /* CinemaUITests.swift */; };
 		962037A42175DA48003015DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962037A32175DA48003015DC /* LoginViewController.swift */; };
+		992AB6A42175EC5400E827C4 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992AB6A32175EC5400E827C4 /* Film.swift */; };
+		992AB6A62175F0B200E827C4 /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992AB6A52175F0B200E827C4 /* Seat.swift */; };
 		993166722175E1DC00C583C4 /* RealmUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993166712175E1DC00C583C4 /* RealmUtils.swift */; };
 		A96231E22175E62300F7DCE6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96231E12175E62300F7DCE6 /* Person.swift */; };
 		DFECD2FCB97DB04BDB32C46D /* Pods_Cinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127939082A8F00562B31321D /* Pods_Cinema.framework */; };
@@ -54,6 +56,8 @@
 		7F3838712175CCFB00FE9D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85D7CF8E2E5A469CB707CF4F /* Pods-Cinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinema.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cinema/Pods-Cinema.release.xcconfig"; sourceTree = "<group>"; };
 		962037A32175DA48003015DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Cinema/Login/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		992AB6A32175EC5400E827C4 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		992AB6A52175F0B200E827C4 /* Seat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seat.swift; sourceTree = "<group>"; };
 		993166712175E1DC00C583C4 /* RealmUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtils.swift; sourceTree = "<group>"; };
 		A96231E12175E62300F7DCE6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		DD485C7BBE6F7027F23786FB /* Pods-Cinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinema.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cinema/Pods-Cinema.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				A96231E12175E62300F7DCE6 /* Person.swift */,
+				992AB6A32175EC5400E827C4 /* Film.swift */,
+				992AB6A52175F0B200E827C4 /* Seat.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -381,6 +387,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A96231E22175E62300F7DCE6 /* Person.swift in Sources */,
+				992AB6A42175EC5400E827C4 /* Film.swift in Sources */,
+				992AB6A62175F0B200E827C4 /* Seat.swift in Sources */,
 				962037A42175DA48003015DC /* LoginViewController.swift in Sources */,
 				993166722175E1DC00C583C4 /* RealmUtils.swift in Sources */,
 				7F3838522175CCF900FE9D1B /* ViewController.swift in Sources */,
