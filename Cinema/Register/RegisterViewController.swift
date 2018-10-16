@@ -44,7 +44,7 @@ class RegisterViewController: UIViewController {
         let email = registerCollection[TextFieldsType.email.rawValue].text
         for persona in listPerson {
             guard persona.email != email else{
-                let alert = UIAlertController(title: "Attenzione", message: "Email già presente", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Attention", message: "Existing email", preferredStyle: .alert)
                 let okay = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
                 alert.addAction(okay)
                 self.present(alert, animated: true, completion: nil)
@@ -79,5 +79,9 @@ class RegisterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
+    }
 }
