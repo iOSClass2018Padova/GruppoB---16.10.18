@@ -306,7 +306,7 @@
                         <outletCollection property="registerCollection" destination="mcv-M1-3Ah" collectionClass="NSMutableArray" id="Xub-Pw-2fS"/>
                         <outletCollection property="registerCollection" destination="y3i-eb-4e8" collectionClass="NSMutableArray" id="fog-as-tby"/>
                         <outletCollection property="registerCollection" destination="HHt-2V-kXz" collectionClass="NSMutableArray" id="PEB-nj-UWP"/>
-                        <segue destination="H7t-TQ-u3O" kind="show" identifier="filmSegue" id="gTY-ub-11G"/>
+                        <segue destination="0yf-qG-nAD" kind="show" identifier="profileSegue" id="bkk-5r-CiP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iwg-3n-8og" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -322,7 +322,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nxm-MY-mcl">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="130" id="Xhu-T1-cR6" customClass="ProfileCellControllerTableViewCell" customModule="Cinema" customModuleProvider="target">
@@ -369,10 +369,10 @@
                                             <outletCollection property="profileText" destination="mz9-ix-PeE" collectionClass="NSMutableArray" id="4gI-k4-Wzh"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="108" id="BEK-Qj-8lO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="108" id="BEK-Qj-8lO" customClass="ProfileCellControllerTableViewCell2" customModule="Cinema" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="158" width="375" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BEK-Qj-8lO" id="zeD-sw-He6">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BEK-Qj-8lO" id="zeD-sw-He6" customClass="ProfileCellControllerTableViewCell2" customModule="Cinema" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -398,6 +398,9 @@
                                                 <constraint firstItem="2rv-By-C4y" firstAttribute="top" secondItem="zeD-sw-He6" secondAttribute="topMargin" constant="10" id="xaq-uF-ykd"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="profileText" destination="gs2-Qe-DTr" id="IjM-GO-D2o"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -538,7 +541,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biS-EZ-EAz">
-                                                    <rect key="frame" x="15.5" y="14" width="19" height="22"/>
+                                                    <rect key="frame" x="19" y="14" width="12" height="22"/>
                                                     <state key="normal" image="Chair"/>
                                                 </button>
                                             </subviews>
@@ -592,11 +595,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Chair" width="19.200000762939453" height="19.200000762939453"/>
-        <image name="Icon" width="368.6400146484375" height="368.6400146484375"/>
-        <image name="Schermo" width="626" height="626"/>
+        <image name="Chair" width="12" height="12"/>
+        <image name="Icon" width="64" height="64"/>
+        <image name="Schermo" width="313" height="313"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="gTY-ub-11G"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -32,6 +32,9 @@ class ProfileCellControllerTableViewCell: UITableViewCell {
 
 class ProfileCellControllerTableViewCell2: UITableViewCell {
     static let kIdentifier = "DetailPersonInfoCellBot"
+    
+    @IBOutlet weak var profileText: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

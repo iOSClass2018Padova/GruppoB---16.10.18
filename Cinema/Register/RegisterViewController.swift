@@ -62,7 +62,7 @@ class RegisterViewController: UIViewController {
         Person(email: registerCollection[TextFieldsType.email.rawValue].text, name: registerCollection[TextFieldsType.name.rawValue].text, surname: registerCollection[TextFieldsType.surname.rawValue].text, password: registerCollection[TextFieldsType.password.rawValue].text).add()
         NSLog("Salvato, registrato!")
         
-        self.performSegue(withIdentifier: "filmSegue", sender: self.dismiss)
+        self.performSegue(withIdentifier: "profileSegue", sender: self.dismiss)
      /*   navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     */

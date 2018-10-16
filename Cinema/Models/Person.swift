@@ -18,8 +18,11 @@ import RealmSwift
     dynamic var surname : String!
     dynamic var password : String!
     
+    dynamic var image : Data?
+
     
-    convenience init( email: String? = nil, name : String? = nil, surname: String? = nil, password: String? = nil) {
+    
+    convenience init( email: String? = nil, name : String? = nil, surname: String? = nil, password: String? = nil, image: Data? = nil) {
         self.init()
         
         self.email = email
@@ -27,7 +30,7 @@ import RealmSwift
         self.surname = surname
         self.password = password
         self.id = email
-        
+        self.image = image
         
     }
     
@@ -40,7 +43,7 @@ import RealmSwift
         return fullName
     }
     
-    func changeData(in realm: Realm = try! Realm(configuration: RealmUtils.config), email: String? = nil, name : String? = nil, surname: String? = nil, password: String? = nil, person: Person? = nil) {
+    func changeData(in realm: Realm = try! Realm(configuration: RealmUtils.config), email: String? = nil, name : String? = nil, surname: String? = nil, password: String? = nil, person: Person? = nil, image: Data? = nil) {
         do {
             try realm.write {
                 
@@ -48,6 +51,7 @@ import RealmSwift
                 self.name = name ?? person?.name ?? self.name
                 self.surname = surname ?? person?.surname ?? self.surname
                 self.password = password ?? person?.password ?? self.password
+                self.image = image ?? person?.image ?? self.image
                 
             }
         }catch {}
