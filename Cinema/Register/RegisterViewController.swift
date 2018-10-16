@@ -30,7 +30,8 @@ class RegisterViewController: UIViewController {
         }
         NSLog("campi non vuoti")
         var pw : String!
-        guard ( pw=registerCollection[TextFieldsType.password.rawValue].text ) == registerCollection[TextFieldsType.password2.rawValue].text else{
+        pw = registerCollection[TextFieldsType.password.rawValue].text
+        guard pw == registerCollection[TextFieldsType.password2.rawValue].text else{
             NSLog("password diverse")
             return
         }
