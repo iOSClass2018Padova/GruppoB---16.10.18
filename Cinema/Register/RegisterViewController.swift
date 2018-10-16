@@ -1,17 +1,14 @@
 //
-//  LoginViewController.swift
+//  RegisterViewController.swift
 //  Cinema
 //
-//  Created by Jason Bourne on 16/10/18.
+//  Created by Giacomo on 16/10/18.
 //  Copyright © 2018 Michele Pertile. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
-    
-    
-    
+class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

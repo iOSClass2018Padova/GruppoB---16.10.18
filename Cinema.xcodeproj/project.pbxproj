@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DA676A52175EB8E0017686A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA676A42175EB8E0017686A /* RegisterViewController.swift */; };
 		7F3838502175CCF900FE9D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38384F2175CCF900FE9D1B /* AppDelegate.swift */; };
 		7F3838522175CCF900FE9D1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3838512175CCF900FE9D1B /* ViewController.swift */; };
 		7F3838552175CCF900FE9D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3838532175CCF900FE9D1B /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		127939082A8F00562B31321D /* Pods_Cinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DA676A42175EB8E0017686A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7F38384C2175CCF900FE9D1B /* Cinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F38384F2175CCF900FE9D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F3838512175CCF900FE9D1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7DA676A32175EB770017686A /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				7DA676A42175EB8E0017686A /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		7F3838432175CCF900FE9D1B = {
 			isa = PBXGroup;
 			children = (
@@ -127,8 +137,8 @@
 		7F38384E2175CCF900FE9D1B /* Cinema */ = {
 			isa = PBXGroup;
 			children = (
+				7DA676A32175EB770017686A /* Register */,
 				A96231E02175E4CF00F7DCE6 /* Models */,
-				A96231DF2175E4BC00F7DCE6 /* Register */,
 				A96231DE2175E4B200F7DCE6 /* FilmList */,
 				A96231DD2175E4A400F7DCE6 /* Seats */,
 				7FFDA9172175DFE100523F76 /* Login */,
@@ -181,13 +191,6 @@
 			children = (
 			);
 			path = FilmList;
-			sourceTree = "<group>";
-		};
-		A96231DF2175E4BC00F7DCE6 /* Register */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Register;
 			sourceTree = "<group>";
 		};
 		A96231E02175E4CF00F7DCE6 /* Models */ = {
@@ -383,6 +386,7 @@
 				A96231E22175E62300F7DCE6 /* Person.swift in Sources */,
 				962037A42175DA48003015DC /* LoginViewController.swift in Sources */,
 				993166722175E1DC00C583C4 /* RealmUtils.swift in Sources */,
+				7DA676A52175EB8E0017686A /* RegisterViewController.swift in Sources */,
 				7F3838522175CCF900FE9D1B /* ViewController.swift in Sources */,
 				7F3838502175CCF900FE9D1B /* AppDelegate.swift in Sources */,
 			);
