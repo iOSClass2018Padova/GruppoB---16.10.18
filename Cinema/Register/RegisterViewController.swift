@@ -10,6 +10,9 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet var registerCollection: [UITextField]!
+    @IBAction func registerActionButton(_ sender: UIButton) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
