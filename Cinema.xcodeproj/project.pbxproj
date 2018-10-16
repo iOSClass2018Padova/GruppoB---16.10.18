@@ -123,9 +123,6 @@
 		7F38384E2175CCF900FE9D1B /* Cinema */ = {
 			isa = PBXGroup;
 			children = (
-				993166702175E12C00C583C4 /* Seats */,
-				9931666F2175E12400C583C4 /* FilmList */,
-				9931666E2175E0F300C583C4 /* Register */,
 				7FFDA9172175DFE100523F76 /* Login */,
 				7F38384F2175CCF900FE9D1B /* AppDelegate.swift */,
 				7F3838512175CCF900FE9D1B /* ViewController.swift */,
@@ -161,27 +158,6 @@
 				962037A32175DA48003015DC /* LoginViewController.swift */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		9931666E2175E0F300C583C4 /* Register */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Register;
-			sourceTree = "<group>";
-		};
-		9931666F2175E12400C583C4 /* FilmList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FilmList;
-			sourceTree = "<group>";
-		};
-		993166702175E12C00C583C4 /* Seats */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Seats;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
