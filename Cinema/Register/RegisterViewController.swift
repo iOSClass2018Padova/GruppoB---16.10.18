@@ -61,9 +61,11 @@ class RegisterViewController: UIViewController {
         NSLog("email non esistente")
         Person(email: registerCollection[TextFieldsType.email.rawValue].text, name: registerCollection[TextFieldsType.name.rawValue].text, surname: registerCollection[TextFieldsType.surname.rawValue].text, password: registerCollection[TextFieldsType.password.rawValue].text).add()
         NSLog("Salvato, registrato!")
-        //self.performSegue(withIdentifier: "loginSegue", sender: self.dismiss)
-        navigationController?.popViewController(animated: true)
+        
+        self.performSegue(withIdentifier: "filmSegue", sender: self.dismiss)
+     /*   navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
+    */
         
     }
     override func viewDidLoad() {
