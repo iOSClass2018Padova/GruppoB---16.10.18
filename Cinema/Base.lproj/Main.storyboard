@@ -312,10 +312,10 @@
             </objects>
             <point key="canvasLocation" x="-447.19999999999999" y="817.24137931034488"/>
         </scene>
-        <!--View Controller-->
+        <!--Film List View Controller-->
         <scene sceneID="d7b-zQ-9ZF">
             <objects>
-                <viewController id="H7t-TQ-u3O" sceneMemberID="viewController">
+                <viewController id="H7t-TQ-u3O" customClass="FilmListViewController" customModule="Cinema" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K1K-cB-233" userLabel="Home">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -381,6 +381,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fab-sv-pJ5"/>
                     </view>
+                    <connections>
+                        <outlet property="filmTableView" destination="VuE-HZ-A6v" id="vKc-ak-ykK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JM7-TL-EaC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

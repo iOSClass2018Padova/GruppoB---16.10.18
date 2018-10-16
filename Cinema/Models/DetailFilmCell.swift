@@ -23,11 +23,15 @@ class DetailFilmCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
+        
+        
+    }
+ 
+    func setup() {
         var listOfFilms : Film = Film(title : "Tre Uomini E Una Gamba", summary : "Gian è un bomber", seats : nil, image : nil)
         
         detailFilmName.text = listOfFilms.title
         detailFilmDescription.text = listOfFilms.summary
         
     }
-
 }
