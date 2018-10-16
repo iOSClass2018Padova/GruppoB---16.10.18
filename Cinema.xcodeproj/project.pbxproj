@@ -51,7 +51,7 @@
 		7F38386F2175CCFB00FE9D1B /* CinemaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaUITests.swift; sourceTree = "<group>"; };
 		7F3838712175CCFB00FE9D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85D7CF8E2E5A469CB707CF4F /* Pods-Cinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinema.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cinema/Pods-Cinema.release.xcconfig"; sourceTree = "<group>"; };
-		962037A32175DA48003015DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		962037A32175DA48003015DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "Cinema/New Group/LoginViewController.swift"; sourceTree = SOURCE_ROOT; };
 		DD485C7BBE6F7027F23786FB /* Pods-Cinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinema.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cinema/Pods-Cinema.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,14 +96,6 @@
 				85D7CF8E2E5A469CB707CF4F /* Pods-Cinema.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		7D2FC9B32174FD2600AEED85 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				962037A32175DA48003015DC /* LoginViewController.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		7D2FC9B42174FD6F00AEED85 /* Register */ = {
@@ -155,7 +147,7 @@
 				7D2FC9B62174FD9800AEED85 /* Posti */,
 				7D2FC9B52174FD7C00AEED85 /* Film list */,
 				7D2FC9B42174FD6F00AEED85 /* Register */,
-				7D2FC9B32174FD2600AEED85 /* Login */,
+				7FFDA9172175DFE100523F76 /* Login */,
 				7F38384F2175CCF900FE9D1B /* AppDelegate.swift */,
 				7F3838512175CCF900FE9D1B /* ViewController.swift */,
 				7F3838532175CCF900FE9D1B /* Main.storyboard */,
@@ -182,6 +174,14 @@
 				7F3838712175CCFB00FE9D1B /* Info.plist */,
 			);
 			path = CinemaUITests;
+			sourceTree = "<group>";
+		};
+		7FFDA9172175DFE100523F76 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				962037A32175DA48003015DC /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
