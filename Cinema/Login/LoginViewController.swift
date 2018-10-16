@@ -27,6 +27,10 @@ class LoginViewController: UIViewController {
             }
             else{
                 NSLog("Login errato")
+                let alert = UIAlertController(title: "Login failed", message: "wrong password or email", preferredStyle: .alert)
+                let okay = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+                alert.addAction(okay)
+                self.present(alert, animated: true, completion: nil)
             }
             
         }
