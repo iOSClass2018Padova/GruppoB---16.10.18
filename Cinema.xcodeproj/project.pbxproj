@@ -15,6 +15,7 @@
 		7F3838652175CCFB00FE9D1B /* CinemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3838642175CCFB00FE9D1B /* CinemaTests.swift */; };
 		7F3838702175CCFB00FE9D1B /* CinemaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38386F2175CCFB00FE9D1B /* CinemaUITests.swift */; };
 		962037A42175DA48003015DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962037A32175DA48003015DC /* LoginViewController.swift */; };
+		993166722175E1DC00C583C4 /* RealmUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993166712175E1DC00C583C4 /* RealmUtils.swift */; };
 		DFECD2FCB97DB04BDB32C46D /* Pods_Cinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127939082A8F00562B31321D /* Pods_Cinema.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		7F3838712175CCFB00FE9D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85D7CF8E2E5A469CB707CF4F /* Pods-Cinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinema.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cinema/Pods-Cinema.release.xcconfig"; sourceTree = "<group>"; };
 		962037A32175DA48003015DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Cinema/Login/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		993166712175E1DC00C583C4 /* RealmUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtils.swift; sourceTree = "<group>"; };
 		DD485C7BBE6F7027F23786FB /* Pods-Cinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinema.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cinema/Pods-Cinema.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 				7F3838562175CCFB00FE9D1B /* Assets.xcassets */,
 				7F3838582175CCFB00FE9D1B /* LaunchScreen.storyboard */,
 				7F38385B2175CCFB00FE9D1B /* Info.plist */,
+				993166712175E1DC00C583C4 /* RealmUtils.swift */,
 			);
 			path = Cinema;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				962037A42175DA48003015DC /* LoginViewController.swift in Sources */,
+				993166722175E1DC00C583C4 /* RealmUtils.swift in Sources */,
 				7F3838522175CCF900FE9D1B /* ViewController.swift in Sources */,
 				7F3838502175CCF900FE9D1B /* AppDelegate.swift in Sources */,
 			);
