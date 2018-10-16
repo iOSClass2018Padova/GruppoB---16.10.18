@@ -27,7 +27,7 @@
                                 <rect key="frame" x="134" y="301" width="177" height="21"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayV-Tj-VjM">
                                 <rect key="frame" x="168.5" y="386" width="38" height="30"/>
@@ -489,6 +489,7 @@
         <image name="Icon" width="368.6400146484375" height="368.6400146484375"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="nJJ-Xh-DJM"/>
         <segue reference="eed-cI-4BY"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -48,8 +48,7 @@ class SeatsCollectionViewController: UIViewController, UICollectionViewDelegate,
         return 0
     }
 
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionViewOutlet.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SeatsCollectionViewCell
     
         // Configure the cell
