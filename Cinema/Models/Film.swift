@@ -15,9 +15,9 @@ import RealmSwift
     dynamic var title : String!
     dynamic var summary : String!
     private var seats : List<Seat>!
-    dynamic var image : Data!
+    dynamic var image : String!
     
-convenience init(title : String!, summary: String!, seats: List<Seat>!, image: Data!) {
+convenience init(title : String!, summary: String!, seats: List<Seat>!, image: String!) {
         self.init()
         
         self.title = title
