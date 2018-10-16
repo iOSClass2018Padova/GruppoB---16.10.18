@@ -7,8 +7,6 @@
 //
 
 import Foundation
-
-// prova per il commit
 import UIKit
 import RealmSwift
 
@@ -28,7 +26,6 @@ import RealmSwift
         self.name = name
         self.surname = surname
         self.password = password
-        
         self.id = email
         
         

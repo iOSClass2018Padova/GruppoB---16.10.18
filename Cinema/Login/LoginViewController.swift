@@ -33,8 +33,8 @@ class LoginViewController: UIViewController {
     }
     @IBAction func registerAction(_ sender: UIButton) {
         self.performSegue(withIdentifier: "registerSegue", sender: self)
-        
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
