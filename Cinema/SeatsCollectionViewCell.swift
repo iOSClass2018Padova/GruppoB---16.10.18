@@ -10,4 +10,7 @@ import UIKit
 
 class SeatsCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var seatButtonOutlet: UIButton!
+    
+    
 }
