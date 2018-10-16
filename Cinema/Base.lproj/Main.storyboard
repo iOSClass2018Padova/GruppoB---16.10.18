@@ -344,20 +344,21 @@
                                                     <color key="textColor" red="0.93432741119999996" green="0.13570952720000001" blue="0.1094629954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB7-57-eaD">
-                                                    <rect key="frame" x="139" y="47.5" width="205" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB7-57-eaD">
+                                                    <rect key="frame" x="139" y="47.5" width="205" height="71"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="yXc-DR-Kxm" firstAttribute="centerY" secondItem="AC7-dQ-tzn" secondAttribute="centerY" id="1pi-f5-JxV"/>
                                                 <constraint firstItem="VB7-57-eaD" firstAttribute="top" secondItem="uRI-bg-3Gm" secondAttribute="bottom" constant="8" id="7Qh-YM-YbQ"/>
                                                 <constraint firstItem="uRI-bg-3Gm" firstAttribute="leading" secondItem="yXc-DR-Kxm" secondAttribute="trailing" constant="16" id="DVU-Fl-9vd"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="VB7-57-eaD" secondAttribute="trailing" constant="16" id="L1t-sh-pBS"/>
                                                 <constraint firstItem="VB7-57-eaD" firstAttribute="leading" secondItem="yXc-DR-Kxm" secondAttribute="trailing" constant="16" id="Q4t-zV-nH8"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="uRI-bg-3Gm" secondAttribute="trailing" constant="16" id="YFp-eN-E6Z"/>
-                                                <constraint firstItem="yXc-DR-Kxm" firstAttribute="centerY" secondItem="AC7-dQ-tzn" secondAttribute="centerY" id="asm-O8-DPZ"/>
+                                                <constraint firstItem="VB7-57-eaD" firstAttribute="bottom" secondItem="yXc-DR-Kxm" secondAttribute="bottom" id="ngy-Jx-bLr"/>
                                                 <constraint firstItem="yXc-DR-Kxm" firstAttribute="leading" secondItem="AC7-dQ-tzn" secondAttribute="leadingMargin" constant="8" id="o50-uL-78h"/>
                                                 <constraint firstItem="uRI-bg-3Gm" firstAttribute="top" secondItem="yXc-DR-Kxm" secondAttribute="top" id="zDy-uk-uxY"/>
                                             </constraints>

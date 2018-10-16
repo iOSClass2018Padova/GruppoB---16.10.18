@@ -28,7 +28,7 @@ class DetailFilmCell: UITableViewCell {
     }
  
     func setup() {
-        var listOfFilms : Film = Film(title : "Tre Uomini E Una Gamba", summary : "Gian è un bomber", seats : nil, image : nil)
+        var listOfFilms : Film = Film(title : "Tre Uomini E Una Gamba", summary : "Gian è un bomber ciao ciao si sono andrea galeazzi benvenuti a questo super swag nuovo numero", seats : nil, image : nil)
         
         detailFilmName.text = listOfFilms.title
         detailFilmDescription.text = listOfFilms.summary
