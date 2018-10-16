@@ -20,6 +20,8 @@
 		992AB6A62175F0B200E827C4 /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992AB6A52175F0B200E827C4 /* Seat.swift */; };
 		993166722175E1DC00C583C4 /* RealmUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993166712175E1DC00C583C4 /* RealmUtils.swift */; };
 		A96231E22175E62300F7DCE6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96231E12175E62300F7DCE6 /* Person.swift */; };
+		A9BAB02221760C1100795942 /* FilmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BAB02121760C1100795942 /* FilmListViewController.swift */; };
+		A9BAB02421760D9D00795942 /* DetailFilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BAB02321760D9D00795942 /* DetailFilmCell.swift */; };
 		DFECD2FCB97DB04BDB32C46D /* Pods_Cinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127939082A8F00562B31321D /* Pods_Cinema.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		992AB6A52175F0B200E827C4 /* Seat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seat.swift; sourceTree = "<group>"; };
 		993166712175E1DC00C583C4 /* RealmUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtils.swift; sourceTree = "<group>"; };
 		A96231E12175E62300F7DCE6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		A9BAB02121760C1100795942 /* FilmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilmListViewController.swift; path = Cinema/Models/FilmListViewController.swift; sourceTree = SOURCE_ROOT; };
+		A9BAB02321760D9D00795942 /* DetailFilmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailFilmCell.swift; path = Cinema/Models/DetailFilmCell.swift; sourceTree = SOURCE_ROOT; };
 		DD485C7BBE6F7027F23786FB /* Pods-Cinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinema.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cinema/Pods-Cinema.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +197,8 @@
 		A96231DE2175E4B200F7DCE6 /* FilmList */ = {
 			isa = PBXGroup;
 			children = (
+				A9BAB02121760C1100795942 /* FilmListViewController.swift */,
+				A9BAB02321760D9D00795942 /* DetailFilmCell.swift */,
 			);
 			path = FilmList;
 			sourceTree = "<group>";
@@ -394,6 +400,8 @@
 				992AB6A62175F0B200E827C4 /* Seat.swift in Sources */,
 				962037A42175DA48003015DC /* LoginViewController.swift in Sources */,
 				993166722175E1DC00C583C4 /* RealmUtils.swift in Sources */,
+				A9BAB02221760C1100795942 /* FilmListViewController.swift in Sources */,
+				A9BAB02421760D9D00795942 /* DetailFilmCell.swift in Sources */,
 				7DA676A52175EB8E0017686A /* RegisterViewController.swift in Sources */,
 				7F3838522175CCF900FE9D1B /* ViewController.swift in Sources */,
 				7F3838502175CCF900FE9D1B /* AppDelegate.swift in Sources */,
