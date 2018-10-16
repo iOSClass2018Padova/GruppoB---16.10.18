@@ -1,28 +1,18 @@
 //
-//  LoginViewController.swift
+//  RegisterViewController.swift
 //  Cinema
 //
-//  Created by Jason Bourne on 16/10/18.
+//  Created by Giacomo on 16/10/18.
 //  Copyright © 2018 Michele Pertile. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
-    
-    
-    
+class RegisterViewController: UIViewController {
 
-    @IBOutlet weak var emailOutlet: UITextField!
-    @IBOutlet weak var passwordOutlet: UITextField!
-    
-    @IBAction func loginAction(_ sender: UIButton) {
+    @IBOutlet var registerCollection: [UITextField]!
+    @IBAction func registerActionButton(_ sender: UIButton) {
     }
-    @IBAction func registerAction(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "registerSegue", sender: self)
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
