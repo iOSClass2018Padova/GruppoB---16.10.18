@@ -24,13 +24,24 @@ extension FilmListViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = filmTableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath) as! DetailFilmCell
-        cell.setup()
         
+        if(indexPath.row == 0){
+            cell.setup(film: Film(title : "Tre Uomini E Una Gamba", summary : "descrizione", seats : nil, image : "TreUominiEUnaGamba"))
+        }
+        if(indexPath.row == 1){
+            cell.setup(film: Film(title : "To Sorea Onta", summary : "descrizione", seats : nil, image : "TreUominiEUnaGamba"))
+        }
+        if(indexPath.row == 2){
+            cell.setup(film: Film(title : "Tre Uomini E Una Gamba", summary : "descrizione", seats : nil, image : "TreUominiEUnaGamba"))
+        }
+        if(indexPath.row == 3){
+            cell.setup(film: Film(title : "Tre Uomini E Una Gamba", summary : "descrizione", seats : nil, image : "TreUominiEUnaGamba"))
+        }
         return cell
     }
     
