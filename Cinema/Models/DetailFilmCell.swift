@@ -17,8 +17,10 @@ class DetailFilmCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
+        var listOfFilms : Film = Film(title : "Due Uomini E Una Gamba", summary : "Gian è un bomber", seats : nil, image : nil)
+        
+        
     }
 
 }
