@@ -22,7 +22,8 @@ class LoginViewController: UIViewController {
             if variabile.email == emailOutlet.text && variabile.password == passwordOutlet.text{
                 NSLog("Login corretto" )
                     
-            
+             self.performSegue(withIdentifier: "homeSegue", sender: self)
+                
             }
             else{
                 NSLog("Login errato")

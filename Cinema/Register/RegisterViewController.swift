@@ -10,6 +10,8 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     
+    
+    
 
     @IBOutlet var registerCollection: [UITextField]!
     @IBAction func registerActionButton(_ sender: UIButton) {
@@ -19,6 +21,8 @@ class RegisterViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
     
 
     /*
