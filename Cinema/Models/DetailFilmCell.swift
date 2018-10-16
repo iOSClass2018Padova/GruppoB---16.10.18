@@ -27,11 +27,11 @@ class DetailFilmCell: UITableViewCell {
         
     }
  
-    func setup() {
-        var listOfFilms : Film = Film(title : "Tre Uomini E Una Gamba", summary : "Gian è un bomber ciao ciao si sono andrea galeazzi benvenuti a questo super swag nuovo numero", seats : nil, image : nil)
+    func setup(film : Film) {
         
-        detailFilmName.text = listOfFilms.title
-        detailFilmDescription.text = listOfFilms.summary
+        detailFilmImage.image = UIImage(named: film.image)
+        detailFilmName.text = film.title
+        detailFilmDescription.text = film.summary
         
     }
 }
