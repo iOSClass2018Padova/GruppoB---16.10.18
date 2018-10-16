@@ -28,11 +28,15 @@ extension FilmListViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = filmTableView.dequeueReusableCell(withIdentifier: "DetailFilmCell", for: indexPath) as! DetailFilmCell
+        let cell = filmTableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath) as! DetailFilmCell
         cell.setup()
+        
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
     
 }
 
