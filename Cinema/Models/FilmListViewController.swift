@@ -10,8 +10,13 @@ import UIKit
 
 class FilmListViewController: UIViewController {
     
+    @IBOutlet weak var filmTableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
-/*
+
 extension FilmListViewController : UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -23,9 +28,15 @@ extension FilmListViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell
+        let cell = filmTableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath) as! DetailFilmCell
+        cell.setup()
+        
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
     
-} */
+}
+
