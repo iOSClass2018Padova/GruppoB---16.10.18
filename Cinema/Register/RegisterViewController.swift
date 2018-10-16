@@ -24,6 +24,7 @@ class RegisterViewController: UIViewController {
         for tag in 0...4 {
             NSLog("tag: "+String(tag))
             guard registerCollection[tag].text != "" else{
+                myAlert("Empty fields")
                 NSLog("campi vuoti")
                 return
             }
@@ -32,32 +33,37 @@ class RegisterViewController: UIViewController {
         var pw : String!
         pw = registerCollection[TextFieldsType.password.rawValue].text
         guard pw == registerCollection[TextFieldsType.password2.rawValue].text else{
+            myAlert("Different emails")
             NSLog("password diverse")
             return
         }
         NSLog("password uguali")
         guard pw.count > 5 else{
+            myAlert("Password must have almost 6 characters")
             NSLog("password minore di 6 car")
             return
         }
         NSLog("password.count OK!")
-        let email = registerCollection[TextFieldsType.email.rawValue].text
+        let email : String! = registerCollection[TextFieldsType.email.rawValue].text
         for persona in listPerson {
             guard persona.email != email else{
-                let alert = UIAlertController(title: "Attention", message: "Existing email", preferredStyle: .alert)
-                let okay = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
-                alert.addAction(okay)
-                self.present(alert, animated: true, completion: nil)
+                myAlert("Existing email")
                 NSLog("email già esistente")
                 return
             }
             
-            
-            
         }
-        NSLog("email non esistente, OK, registrato!")
-        self.performSegue(withIdentifier: "returnLoginSegue", sender: self)
-        
+        guard isValidEmail(testStr: email) else{
+            myAlert("Invalid email")
+            NSLog("Email non valida!")
+            return
+        }
+        NSLog("email non esistente")
+        Person(email: registerCollection[TextFieldsType.email.rawValue].text, name: registerCollection[TextFieldsType.name.rawValue].text, surname: registerCollection[TextFieldsType.surname.rawValue].text, password: registerCollection[TextFieldsType.password.rawValue].text).add()
+        NSLog("Salvato, registrato!")
+        //self.performSegue(withIdentifier: "loginSegue", sender: self.dismiss)
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
         
     }
     override func viewDidLoad() {
@@ -73,6 +79,7 @@ class RegisterViewController: UIViewController {
     /*
     // MARK: - Navigation
 
+     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
@@ -83,5 +90,12 @@ class RegisterViewController: UIViewController {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)
+    }
+    
+    func myAlert(_ text : String!){
+        let alert = UIAlertController(title: "Attention", message: text, preferredStyle: .alert)
+        let okay = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+        alert.addAction(okay)
+        self.present(alert, animated: true, completion: nil)
     }
 }
