@@ -31,16 +31,16 @@ extension FilmListViewController : UITableViewDelegate, UITableViewDataSource {
         let cell = filmTableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath) as! DetailFilmCell
         
         if(indexPath.row == 0){
-            cell.setup(film: Film(title : "Tre Uomini E Una Gamba", summary : "descrizione", seats : nil, image : "TreUominiEUnaGamba"))
+            cell.setup(film: Film(title : "Tre Uomini E Una Gamba", summary : "Tre amici che flaxano un viaggio al limite del paranormale, tra peperonate e gambe non mancheranno le trappate pesanti.", seats : nil, image : "TreUominiEUnaGamba"))
         }
         if(indexPath.row == 1){
-            cell.setup(film: Film(title : "To Sorea Onta", summary : "descrizione", seats : nil, image : "TreUominiEUnaGamba"))
+            cell.setup(film: Film(title : "Ramboso Do", summary : "Il secondo capitolo del pluripremiato capolavoro della Toi Tuto (Dolliwood). Noioso, posato e astemio sono gli aggettivi che meno si possono associare a questo film.", seats : nil, image : "RambosoDo"))
         }
         if(indexPath.row == 2){
-            cell.setup(film: Film(title : "Tre Uomini E Una Gamba", summary : "descrizione", seats : nil, image : "TreUominiEUnaGamba"))
+            cell.setup(film: Film(title : "Svalvolati On The Road", summary : "Quattro amici alla ricerca di gioventù e divertimento, con ghiaccio nei cuori, nei colli e nei polsi, si trapperanno la scena del viaggio come mai prima.", seats : nil, image : "SvalvolatiOnTheRoad"))
         }
         if(indexPath.row == 3){
-            cell.setup(film: Film(title : "Tre Uomini E Una Gamba", summary : "descrizione", seats : nil, image : "TreUominiEUnaGamba"))
+            cell.setup(film: Film(title : "Attila Flagello Di Dio", summary : "Film storico di una precisione fulminante, niente è lasciato al caso, violenza e mari di sangue non mancheranno.", seats : nil, image : "AttilaFlagelloDiDio"))
         }
         return cell
     }
