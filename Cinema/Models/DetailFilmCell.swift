@@ -28,7 +28,8 @@ class DetailFilmCell: UITableViewCell {
     }
  
     func setup() {
-        let listOfFilms : Film = Film(title : "Tre Uomini E Una Gamba", summary : "Gian è un bomber", seats : nil, image : "TreUominiEUnaGamba")
+        let descrizione = "Tre amici che se la swaggano in un viaggio al limite del fantascientifico. Film pieno di emozioni e sugo."
+        let listOfFilms : Film = Film(title : "Tre Uomini E Una Gamba", summary : descrizione, seats : nil, image : "TreUominiEUnaGamba")
         
         detailFilmImage.image = UIImage(named: listOfFilms.image)
         detailFilmName.text = listOfFilms.title
